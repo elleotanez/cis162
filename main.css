@@ -1,13 +1,68 @@
+address, article, aside, blockquote, body, cite,
+div, dl, dt, dd, em, figcaption, figure, footer,
+h1, h2, h3, h4, h5, h6, header, html, img,
+li, main, nav, ol, p, section, span, ul {
+
+box-sizing: border-box;
+}
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section {
+        display: block;
+        
+}
+
+
+
 body {
     background-color: #abd09a;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: auto;
+    width: 90%; 
+   
     }
 
+
 header {
+
+    display: block;
     height: 150px;
-    width: 30%;
+    width: 90%;
     background-color: #005445;
+    text-align: center;
     }
+
+
+
+nav.horizontalNavigation li {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: block;
+        float: left;
+        text-align: center;
+        width: 32%;
+        
+        }
+nav.horizontalNavigation a {
+        display: block;
+        align-content: center;
+    }
+
+nav.horizontalNavigation a {
+        background-color: #abd09a; 
+        line-height: 1.8em;
+        text-align: center;
+     }  
+     
+nav.horizontalNavigation a:link, 
+     nav.horizontalNavigation a:visited {
+        color: #ffffff; 
+     }
+     
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+        background-color: #d0e9c1;
+     }   
+
 
 h1  {
     color: white;
@@ -24,16 +79,36 @@ nav > ul {
     }
 
 section {
-    height: 250px;
-    width: 80%;
-    letter-spacing: 3px;
-    font-size: smaller;
-    background-color:#f2fcda ;
-
+        background-color: #f2fcda;
+        padding: 1.4em;
+        width: 90%;
     }
 
+section#leftColumn {
+        clear: left;
+        float: left;
+        padding: 1.3em;
+        width: 50%;
+        }
+
+section#leftColumn > img {
+        padding: 1.3em;
+        clear: left;
+        float: left;
+        
+}
+
+section#rightColumn {
+            float: left;
+            padding: 1.3em;
+            width: 40%;
+            }
+        
+
 footer {
-    height: 70px;
-    width: 20%;
+    clear: left;
+    float: left;
+    padding: 1em;
+    width: 90%;
     background-color:#d0e9c1;
 }
